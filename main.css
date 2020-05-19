@@ -1,0 +1,641 @@
+/* Estilos generales */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.content-bg {
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+
+/* Estilos del Header 
+* Estilos generales utilizados
+*/
+
+#header {
+    width: 100%;
+    position: fixed;
+}
+
+#header .container {
+    padding-left: 180px;
+    padding-right: 180px;
+    background-color: #f8f8f8;
+}
+
+#header {
+    z-index: 99;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.px-0 {
+    padding-right: 0px;
+    padding-right: 0px;
+}
+
+
+/* Estilos para el menu */
+
+#menu ul li {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 5px 0;
+}
+
+#menu ul li:hover {
+    background-color: #eee;
+    border-left: 4px solid gray;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+#menu ul li a i {
+    margin: 0 6px;
+}
+
+
+/* Estilos encabezado  */
+
+.banner-title {
+    /* position: relative; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    text-align: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+    margin: 0px 0px 15px;
+}
+
+.banner-title h1 {
+    font-size: 60px;
+    line-height: 85px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.banner-title h4 {
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 2.7px;
+}
+
+
+/* Estilos Seccion servicios */
+
+#cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: center;
+    margin-top: -165px;
+}
+
+.col-4 {
+    width: 20%;
+}
+
+#cards .card {
+    background-color: white;
+    margin-right: 2rem;
+    padding: 65px 15px 60px 15px;
+    box-shadow: 0px 40px 40px 0px rgba(27, 24, 25, 0.04);
+    border-radius: 10px;
+    transition: all ease .4s;
+}
+
+#cards .card:hover {
+    background-color: black;
+    color: #fff !important;
+}
+
+#cards .card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#cards .card h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+
+#cards .card p {
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin: 0;
+}
+
+
+/* Estilos sección trabajos 
+* sección del banner de texto
+*/
+
+#works {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 120px 0;
+}
+
+#works .works-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#works .works-description h2 {
+    font-size: 24px;
+    letter-spacing: 6px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+#works .works-description p {
+    font-size: 16px;
+    color: #5d5d5d;
+    line-height: 34px;
+}
+
+
+/* Sección trabajos realizados */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.filter-menu {
+    margin-bottom: 65px;
+}
+
+.filter-menu ul {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter-menu ul li {
+    display: inline-block;
+    margin-right: .5rem;
+    color: #282828;
+    font-size: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    padding: 0 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+/* Estilos grilla de items */
+
+.portfolio-items {
+    position: relative;
+    height: 744.406px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 7em;
+    padding-left: 7em;
+}
+
+.portfolio-items .portfolio-item {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.portfolio-items .portfolio-item:nth-child(4) {
+    margin-top: -15.5rem;
+}
+
+.portfolio-items .portfolio-item:nth-child(6) {
+    margin-top: -9.5rem;
+}
+
+.portfolio-items .portfolio-item img {
+    width: 100%;
+}
+
+
+/* Estilos boton cargas más */
+
+.load {
+    padding-top: 165px;
+    text-align: center;
+}
+
+.load a {
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid #111111;
+    color: #111111;
+    text-decoration: none;
+    padding: 1px 45px 0 45px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+}
+
+.load a:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+
+/* Estilos seccion de testimonios
+* Estilos al banner de texto
+*/
+
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 120px 0px;
+}
+
+.testimonials .testimonial-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.testimonials .testimonial-banner h2 {
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #282828;
+}
+
+.testimonials .testimonial-banner p {
+    font-size: 16px;
+    color: #5d5d5d;
+    line-height: 34px;
+}
+
+
+/* Estilos cards testimonios */
+
+.card-testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 180px;
+    padding-left: 180px;
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.card-testimonials .card {
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0px 40px 40px 0px rgba(27, 24, 25, 0.04);
+}
+
+.card-testimonials .card p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #5d5d5d;
+}
+
+.card-testimonials .card .media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-testimonials .card .media h5,
+.card-testimonials .card .media h6 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.card-testimonials .card .media h5 {
+    font-size: 16px;
+    letter-spacing: 2.1px;
+    color: #282828;
+}
+
+.card-testimonials .card .media h6 {
+    margin-left: 10px;
+    align-self: center;
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    color: #878787;
+}
+
+
+/* Estilos botones de banner slide */
+
+.slick-dots {
+    list-style: none;
+    margin: 80px 0 0 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+.slick-dots .presentation {
+    display: inline-block;
+    line-height: 1;
+    padding: 0 7px;
+}
+
+.slick-dots button {
+    border: 2px solid #d4d4d4;
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slick-dots li:nth-child(1) button {
+    background-color: #d4d4d4;
+}
+
+
+/* Estilos del blog 
+* Estilos banner descripción
+*/
+
+.blog {
+    padding: 120px 0px;
+}
+
+.blog .blog-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blog .blog-banner h2 {
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #282828;
+}
+
+.blog .blog-banner p {
+    font-size: 16px;
+    color: #5d5d5d;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+
+/* Estilos sección contenido del blog
+* Estilos generales banner texto */
+
+.blog-space {
+    width: 100%;
+    padding-right: 180px;
+    padding-left: 180px;
+}
+
+.blog-space .col-12 {
+    width: 100% !important;
+}
+
+
+/* Estilos secciones del blog */
+
+.blog-space .blog-space-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blog-space .blog-space-item img {
+    width: 100%;
+}
+
+.blog-space .blog-space-item:nth-child(1) {
+    margin-bottom: 60px;
+}
+
+
+/* Estilos sección tarjetas de texto */
+
+.blog-space .blog-space-item .blog-card {
+    padding-left: 55px;
+    padding-top: 5em;
+}
+
+.blog-card:nth-child(1) {
+    padding-left: 0px !important;
+    padding-right: 55px;
+}
+
+.col-6:nth-child(2) {
+    padding-left: 55px;
+}
+
+.col-6:nth-child(1) {
+    padding-right: 55px;
+}
+
+.blog-space .blog-space-item .blog-card a {
+    text-decoration: none;
+}
+
+.blog-space .blog-space-item .blog-card h4,
+.blog-space .blog-space-item .blog-card h6 {
+    text-transform: uppercase;
+    color: #282828;
+}
+
+.blog-space .blog-space-item .blog-card h4 {
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+
+.blog-space .blog-space-item .blog-card p {
+    font-size: 16px;
+    line-height: 34px;
+    color: #5d5d5d;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.blog-space .blog-space-item .blog-card .card-link {
+    color: #111111;
+    letter-spacing: 1.95px;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.col-6 {
+    width: 40%;
+}
+
+
+/* Estilos footer 
+* Estilos main footer
+*/
+
+.col-3 {
+    width: 30%;
+}
+
+#footer .main-footer {
+    background-color: #111111;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+#footer .main-footer .container {
+    width: 100%;
+    padding-right: 70px;
+    padding-left: 130px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer .main-footer .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer .main-footer .container .row .footer-widget {
+    padding-right: 30px;
+    color: #fff;
+}
+
+#footer .main-footer .container .row .footer-widget h5 {
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+#footer .main-footer .container .row .footer-widget p {
+    font-size: 16px;
+    line-height: 34px;
+    margin: 0px;
+    color: #ababab;
+}
+
+#footer .main-footer .container .row .footer-widget p a {
+    text-decoration: none;
+    color: #ababab;
+    text-transform: capitalize;
+}
+
+#footer .main-footer .container .row img {
+    max-width: 100%;
+}
+
+
+/* Estilos CopyRight */
+
+.last-footer {
+    background-color: #1d1d1d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#footer .last-footer .container {
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer .last-footer .container .row .col-2 {
+    width: 50% !important;
+}
+
+#footer .last-footer .container .row .copy-right p {
+    color: #ababab;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px;
+}
+
+#footer .last-footer .container .row .social-links {
+    text-align: right;
+}
+
+#footer .last-footer .container .row .social-links a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #ababab;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#footer a:hover {
+    color: white !important;
+}
