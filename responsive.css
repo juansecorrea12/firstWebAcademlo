@@ -1,0 +1,224 @@
+/* Diseño responsive de la web */
+
+@media (max-width: 1095px) {
+    #header .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .blog-space .blog-space-item .blog-card {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-bg {
+        height: 70vh;
+    }
+    .banner-title {
+        min-height: 70vh;
+    }
+    .portfolio-items {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .card-testimonials {
+        padding-right: 3em;
+        padding-left: 3em;
+        justify-content: space-around;
+    }
+    .blog-space {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media (max-width: 980px) {
+    .col-4 {
+        width: 45%;
+    }
+    #cards .card {
+        margin-bottom: 1rem;
+    }
+    .card-testimonials {
+        justify-content: space-around;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .card-testimonials .card {
+        padding: 30px;
+    }
+    .card-testimonials .card .media h6 {
+        margin-left: 0px;
+    }
+    .blog-space {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #menu ul li {
+        margin-left: 0px;
+    }
+    .banner-title h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    #cards {
+        padding-right: 40px;
+        padding-left: 50px;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    #footer .main-footer .container {
+        padding-right: 20px;
+        padding-left: 40px;
+    }
+    #footer .last-footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    #header .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #header .container .logo {
+        margin: 0px auto;
+    }
+    #header .container #menu {
+        margin: 0px auto;
+    }
+    .banner-title h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .col-4 {
+        width: 40%;
+    }
+    #cards {
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+    .portfolio-items {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card-testimonials {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .card-testimonials .card {
+        padding: 30px 10px;
+    }
+    .blog-space {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .content-bg {
+        height: 80vh;
+    }
+    .banner-title {
+        min-height: 80vh;
+    }
+    #header .container #menu {
+        display: none;
+    }
+    .banner-title h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .banner-title h4 {
+        font-size: 10px;
+    }
+    .col-4 {
+        width: 95%;
+    }
+    #works .works-description p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .portfolio-items .portfolio-item {
+        width: calc(100% / 1);
+    }
+    .testimonials {
+        padding: 5rem 0;
+    }
+    .testimonials .testimonial-banner p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .testimonials .testimonial-banner {
+        margin-bottom: 2rem;
+    }
+    .slick-dots {
+        margin: 2rem 0 0 0;
+    }
+    .col-2 {
+        width: 90%;
+    }
+    .card-testimonials .card {
+        margin-bottom: 1rem;
+    }
+    .blog .blog-banner p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-6:nth-child(1) {
+        padding-right: 0px;
+    }
+    .blog-space .blog-space-item .blog-card {
+        padding-top: 2rem;
+        padding-left: 0px;
+    }
+    .blog .blog-banner {
+        margin-bottom: 2rem;
+    }
+    .blog-space .blog-space-item {
+        flex-direction: row-reverse;
+    }
+    .blog-space .blog-space-item:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+    .col-6:nth-child(2) {
+        padding-left: 0px;
+        margin-top: 1rem;
+    }
+    #footer .main-footer .container .row {
+        display: block;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    #footer .main-footer .container .row .footer-widget {
+        margin-top: 1rem;
+    }
+    #footer .main-footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .last-footer .container .row {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    #footer .last-footer .container .row .col-2 {
+        width: 100% !important;
+    }
+    #footer .last-footer .container .row .social-links {
+        text-align: center;
+    }
+}
