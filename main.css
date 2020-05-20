@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@
 .sticky {
     position: sticky;
     top: 0;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -44,7 +44,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .px-0 {
@@ -142,7 +142,7 @@ p {
     padding: 65px 15px 60px 15px;
     box-shadow: 0px 40px 40px 0px rgba(27, 24, 25, 0.04);
     border-radius: 10px;
-    transition: all ease .4s;
+    transition: all ease 0.4s;
 }
 
 #cards .card:hover {
@@ -231,7 +231,7 @@ p {
 
 .filter-menu ul li {
     display: inline-block;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     color: #282828;
     font-size: 12px;
     letter-spacing: 3px;
@@ -246,7 +246,7 @@ p {
 
 .portfolio-items {
     position: relative;
-    height: 744.406px;
+    /* height: 744.406px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -255,10 +255,13 @@ p {
 }
 
 .portfolio-items .portfolio-item {
-    width: 30%;
+    width: calc(100% / 3);
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 30px;
+}
+
+.portfolio-items .portfolio-item .portfolio-title {
+    opacity: 0;
 }
 
 .portfolio-items .portfolio-item:nth-child(4) {
@@ -271,13 +274,14 @@ p {
 
 .portfolio-items .portfolio-item img {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 
 /* Estilos boton cargas más */
 
 .load {
-    padding-top: 165px;
+    padding-top: 65px;
     text-align: center;
 }
 
@@ -412,7 +416,7 @@ p {
     margin: 0;
     padding: 0;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .slick-dots li:nth-child(1) button {
